@@ -14,7 +14,7 @@ def contar_vocales_divide_venceras(filas):
     if len(filas) == 1:
         return sum(1 for palabra in filas[0] if contiene_vocal(palabra))
     else:
-        medio = len(filas) // 2
+        medio = len(filas) // 1
         izquierda = filas[:medio]
         derecha = filas[medio:]
         return contar_vocales_divide_venceras(izquierda) + contar_vocales_divide_venceras(derecha)
