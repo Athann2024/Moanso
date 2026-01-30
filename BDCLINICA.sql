@@ -14,7 +14,7 @@ CREATE TABLE Paciente (
     IdPaciente INT IDENTITY(1,1) PRIMARY KEY,
     Nombre VARCHAR(100),
     Apellido VARCHAR(100),
-    DNI VARCHAR(8),
+    DNI VARCHAR(9),
     FechaNacimiento DATE,
     Sexo CHAR(1),
     TipoSangre VARCHAR(5)
@@ -25,7 +25,7 @@ CREATE TABLE ProcedimientoMedico (
     IdProcedimiento INT IDENTITY(1,1) PRIMARY KEY,
     Nombre VARCHAR(150) NOT NULL,
     Costo DECIMAL(10,2) NOT NULL,
-    Tipo VARCHAR(30) CHECK (Tipo IN ('Cirugía','Hospitalización','Consulta')),
+    Tipo VARCHAR(30) CHECK (Tipo IN ('CirugÃ­a','HospitalizaciÃ³n','Consulta')),
     DuracionEstimada INT -- minutos
 );
 GO
@@ -69,3 +69,4 @@ CREATE TABLE UsoInsumoProcedimiento (
 );
 GO
 ---------------
+
