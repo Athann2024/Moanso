@@ -9,7 +9,7 @@ class LaberintoSolver:
             [ 1,  1,  1,  1,  3,  1,  1,  1,  1],
             [ 1, 99,  1, 99,  1, 99,  1, 99,  1],
             [ 1, -2,  1,  1,  1,  1,  1,  1,  1],
-            [ 1, 99,  1, 99,  1, 99,  1, 99,  1],
+            [ 1, 99,  1, 99,  1, 99,  1, 99,  0],
             [ 1,  1,  1,  1,  1,  1,  1,  1,  0]
         ]
         
@@ -90,4 +90,5 @@ class LaberintoSolver:
 
 if __name__ == "__main__":
     solver = LaberintoSolver()
+
     solver.ejecutar()
